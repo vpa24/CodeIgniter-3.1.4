@@ -1,0 +1,317 @@
+
+.menu li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  background: #FE9126;
+  text-align: center;
+    font-weight: bold;
+}
+.menu li.active:first-child{
+  width: 100px;
+}
+.menu  li{
+  float: left;
+  color:#f1f1f1;
+  width:125px;
+  height: 50px;
+  line-height: 50px;
+  position:relative;
+    margin-bottom: -5px;
+  cursor: pointer;
+
+}
+.menu  li.dropdown:last-child{
+  float: left;
+  color:#f1f1f1;
+  width:180px;
+  height: 50px;
+  line-height: 50px;
+  position:relative;
+    margin-bottom: -5px;
+  cursor: pointer;
+
+}
+
+.menu ul li a{
+  color:#f1f1f1;
+  text-decoration: none;
+  font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+ul.sub-menu{
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  padding: 0;
+  z-index: 9999;
+}
+ul.sub-menu li{
+  background:#E65527;
+  color: #fff;
+  text-align: left;
+  padding-left: 10px;
+  font-weight: bold;
+  z-index: 9999;
+}
+.menu  li.dropdown:last-child ul.sub-menu li{
+  width: 180px;
+  background:#E65527;
+  color: #fff;
+  text-align: left;
+  padding-left: 10px;
+  font-weight: bold;
+  z-index: 9999;
+}
+.menu li:hover{
+  background:#ff9966;
+
+  z-index: 9999;
+}
+
+ul.sub-menu li{
+  display: none;
+}
+li:hover > ul.sub-menu li {
+  display: block;
+}
+li:hover > ul.sub-menu.menu1{
+  perspective: 1000px;
+}
+li:hover > ul.sub-menu.menu1 li:nth-child(1){
+    opacity: 0;
+    animation-name: menu1;
+    animation-duration: 300ms;
+    animation-delay: -200ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu1 li:nth-child(2){
+    opacity: 0;
+    animation-name: menu1;
+    animation-duration: 300ms;
+    animation-delay:0ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu1 li:nth-child(3){
+      opacity: 0;
+      animation-name: menu1;
+      animation-duration: 300ms;
+      animation-delay: 200ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu1 li:nth-child(4){
+    opacity: 0;
+    animation-name: menu1;
+    animation-duration: 300ms;
+    animation-delay: 400ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu1 li:nth-child(5){
+    opacity: 0;
+    animation-name: menu1;
+    animation-duration: 300ms;
+    animation-delay: 600ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu1 li:nth-child(6){
+    opacity: 0;
+    animation-name: menu1;
+    animation-duration: 300ms;
+    animation-delay: 800ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes menu1 {
+  0% {opacity: 0;transform: rotateY(-90deg) translateY(30px);}
+  100%{opacity: 1;transform: rotateY(0deg) translateY(0px);}
+}
+
+li:hover > ul.sub-menu.menu2{
+  perspective: 1000px;
+}
+li:hover > ul.sub-menu.menu2 li:nth-child(1){
+    opacity: 0;
+    transform-origin: top center;
+    animation-name: menu2;
+    animation-duration: 300ms;
+    animation-delay:-150ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu2 li:nth-child(2){
+    opacity: 0;
+    transform-origin: top center;
+    animation-name: menu2;
+    animation-duration: 300ms;
+    animation-delay: 0ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu2 li:nth-child(3){
+    opacity: 0;
+    transform-origin: top center;
+    animation-name: menu2;
+    animation-duration: 300ms;
+    animation-delay: 150ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu2 li:nth-child(4){
+    opacity: 0;
+    transform-origin: top center;
+    animation-name: menu2;
+    animation-duration:300ms;
+    animation-delay: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu2 li:nth-child(5){
+  opacity: 0;
+  transform-origin: top center;
+  animation-name: menu2;
+  animation-duration: 300ms;
+  animation-delay: 450ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu2 li:nth-child(6){
+  opacity: 0;
+  transform-origin: top center;
+  animation-name: menu2;
+  animation-duration: 300ms;
+  animation-delay: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes menu2 {
+  0% {opacity: 0;transform: rotateX(-90deg);}
+  60% {transform: rotateX(50deg);}
+  100%{opacity: 1;transform: rotateX(0deg);}
+}
+
+li:hover > ul.sub-menu.menu3{
+  perspective: 1000px;
+}
+li:hover > ul.sub-menu.menu3 li:nth-child(1){
+    opacity: 0;
+    animation-name: menu3;
+    animation-duration: 300ms;
+    animation-delay:-150ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu3 li:nth-child(2){
+    opacity: 0;
+    animation-name: menu3;
+    animation-duration: 300ms;
+    animation-delay: 0ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu3 li:nth-child(3){
+    opacity: 0;
+    animation-name: menu3;
+    animation-duration: 300ms;
+    animation-delay: 150ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu3 li:nth-child(4){
+    opacity: 0;
+    animation-name: menu3;
+    animation-duration:300ms;
+    animation-delay: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu3 li:nth-child(5){
+  opacity: 0;
+  animation-name: menu3;
+  animation-duration: 300ms;
+  animation-delay: 450ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu3 li:nth-child(6){
+  opacity: 0;
+  animation-name: menu3;
+  animation-duration: 300ms;
+  animation-delay: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes menu3 {
+  0% {opacity: 0;transform: scale(0.3) translateY(-60px); }
+  80% {transform: scale(1.2) translateY(10px);}
+  100%{opacity: 1;transform: scale(1) translateY(0);}
+}
+li:hover > ul.sub-menu.menu4{
+  perspective: 1000px;
+}
+li:hover > ul.sub-menu.menu4 li:nth-child(1){
+    opacity: 0;
+    transform-origin: top right;
+    animation-name: menu4;
+    animation-duration: 300ms;
+    animation-delay:-150ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu4 li:nth-child(2){
+    opacity: 0;
+    transform-origin: top right;
+    animation-name: menu4;
+    animation-duration: 300ms;
+    animation-delay: 0ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu4 li:nth-child(3){
+    opacity: 0;
+    transform-origin: top right;
+    animation-name: menu4;
+    animation-duration: 300ms;
+    animation-delay: 150ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu4 li:nth-child(4){
+    opacity: 0;
+    transform-origin: top right;
+    animation-name: menu4;
+    animation-duration:300ms;
+    animation-delay: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu4 li:nth-child(5){
+  opacity: 0;
+  transform-origin: top right;
+  animation-name: menu4;
+  animation-duration: 300ms;
+  animation-delay: 450ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+li:hover > ul.sub-menu.menu4 li:nth-child(6){
+  opacity: 0;
+  transform-origin: top right;
+  animation-name: menu4;
+  animation-duration: 300ms;
+  animation-delay: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes menu4 {
+  0% {opacity: 0;transform: rotate(-30deg) translateX(30px); }
+  100%{opacity: 1;transform: rotate(0deg) translateX(0);}
+}

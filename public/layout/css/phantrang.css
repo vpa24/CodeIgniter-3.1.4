@@ -1,0 +1,25 @@
+/* Phân trang */
+.div_phan_trang
+{
+	margin:20px 50px;
+	width:100%;
+	text-align:center;
+
+}
+.div_trang
+{
+	width:30px;
+	padding:5px 10px 5px 10px;
+	text-align:center;
+	border:1px solid #EEEEEE;
+	border-radius: 5px;
+
+}
+.div_trang a
+{
+	text-decoration:none;
+}
+.div_trang a.focus{
+	background-color: #ffc229;
+}
+/* kết thúc Phân trang */
